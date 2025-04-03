@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Buscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Voltar
@@ -95,9 +96,9 @@
             // codigo
             // 
             this.codigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codigo.Location = new System.Drawing.Point(166, 153);
+            this.codigo.Location = new System.Drawing.Point(166, 115);
             this.codigo.Name = "codigo";
-            this.codigo.Size = new System.Drawing.Size(593, 31);
+            this.codigo.Size = new System.Drawing.Size(388, 31);
             this.codigo.TabIndex = 17;
             this.codigo.TextChanged += new System.EventHandler(this.codigo_TextChanged);
             // 
@@ -135,7 +136,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 156);
+            this.label2.Location = new System.Drawing.Point(27, 118);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 25);
             this.label2.TabIndex = 13;
@@ -153,12 +154,25 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Atualizar";
             // 
+            // Buscar
+            // 
+            this.Buscar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buscar.Location = new System.Drawing.Point(595, 111);
+            this.Buscar.Name = "Buscar";
+            this.Buscar.Size = new System.Drawing.Size(131, 41);
+            this.Buscar.TabIndex = 23;
+            this.Buscar.Text = "Buscar";
+            this.Buscar.UseVisualStyleBackColor = false;
+            this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
+            // 
             // Atualizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Buscar);
             this.Controls.Add(this.Voltar);
             this.Controls.Add(this.atualiza);
             this.Controls.Add(this.endereco);
@@ -190,5 +204,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Buscar;
     }
 }
